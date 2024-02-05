@@ -1,3 +1,4 @@
+import ItemCountContainer from "./common/itemCount/ItemCountContainer";
 import ProductCardContainer from "./common/productCard/productCardContainer";
 import NavBarContainer from "./layout/navBar/NavBarContainer";
 import ItemListContainer from "./pages/itemListContainer/ItemListContainer";
@@ -8,6 +9,7 @@ function App() {
       <NavBarContainer />
       <ItemListContainer />
       <ProductCardContainer />
+      <ItemCountContainer />
     </>
   );
 }
