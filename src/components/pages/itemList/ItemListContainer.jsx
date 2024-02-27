@@ -23,5 +23,7 @@ export const ItemListContainer = () => {
     });
   }, [category]);
 
-  return <>{isLoading ? <h2>Cargando productos...</h2> : <ItemList products={products} />}</>;
+  return <>
+  <div className={`body-cards`}>{isLoading ? <h2>Cargando productos...</h2> : <ItemList products={products} />}</div>
+  </>;
 };

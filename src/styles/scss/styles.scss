@@ -1,0 +1,26 @@
+/*Utilities  */
+@import './utilities/functions';
+@import './utilities/maps';
+@import './utilities/mixin';
+@import './utilities/variables';
+/*Base  */
+@import './base/reset';
+@import './base/typo';
+/*Layout  */
+//Nav bar
+@import './layout/navBar/navBar';
+//Cart body
+@import './layout/navBar/cart-body/cart-body';
+//Body Cards
+@import './layout/body-cards';
+/*Components  */
+//Card
+@import './components/card/card-container';
+@import './components/card/card-container__imgTitle';
+@import './components/card/cart-container__txtButton';
+//Detail list
+@import './components/detail-list/detail-list-container';
+@import './components/detail-list/detail-list-container__imgTitle';
+@import './components/detail-list/detail-list-container__txtButton';
+@import './components/detail-list/detail-list-container__containerText'
+/*Media  */

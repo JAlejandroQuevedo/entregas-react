@@ -1,0 +1,31 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: gray;
+    opacity: .95;
+    gap: .625rem;
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .buttons__navBar{
+        button{
+            height: 40px;
+            width: 70px;
+            background: none;
+            border: none;
+            color: white;
+            border-bottom: 2px solid white;
+            margin-right: 10px;
+            &:hover{
+                border-bottom: 2px solid black;
+                color: black;
+            }
+        }
+
+    }
+}
+
