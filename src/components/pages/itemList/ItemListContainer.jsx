@@ -24,6 +24,6 @@ export const ItemListContainer = () => {
   }, [category]);
 
   return <>
-  <div className={`body-cards`}>{isLoading ? <h2>Cargando productos...</h2> : <ItemList products={products} />}</div>
+  <div className={`body-cards`}>{isLoading ? <h2>Cargando...</h2> : <ItemList products={products} />}</div>
   </>;
 };

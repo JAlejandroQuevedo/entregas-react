@@ -68,7 +68,7 @@ const products = [
         name: "Pantalón Táctico Militar Impermeable Y Cortavientos",
         img: "https://res.cloudinary.com/dge6pbj4l/image/upload/v1709051591/photos%20store/xq0qqp3earbvsnlklict.webp",
         price: 283,
-        category: "calzados",
+        category: "pantalones",
         description: "Estructura de tela de alta calidad: no decolora, resistente al desgarro, transpirable y liviana, brindando la mejor comodidad.", stock: 10
     }
 
