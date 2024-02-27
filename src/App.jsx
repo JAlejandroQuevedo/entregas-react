@@ -1,17 +1,22 @@
-import ItemCountContainer from "./common/itemCount/ItemCountContainer";
-import ProductCardContainer from "./common/productCard/productCardContainer";
-import NavBarContainer from "./layout/navBar/NavBarContainer";
-import ItemListContainer from "./pages/itemListContainer/ItemListContainer";
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { ItemDetailContainer, ItemListContainer } from "./components/pages"
+import { NavBar } from "./components/layout/NavBar"
+import { Cart, Item } from "./components/common"
 
-function App() {
+const App = () => {
   return (
     <>
-      <NavBarContainer />
-      <ItemListContainer />
-      <ProductCardContainer />
-      <ItemCountContainer />
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/"  element={ <ItemListContainer/> }/>
+          <Route path="/category/:category"  element={ <ItemListContainer/> }/>
+          <Route path="/cart"  element={ <Cart/> }/>
+          <Route path="/item/:id"  element={ <ItemDetailContainer /> }/>
+        </Routes>
+      </BrowserRouter>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
